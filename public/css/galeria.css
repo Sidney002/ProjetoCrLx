@@ -1,0 +1,95 @@
+.galery{
+    width: 100%;
+    background: transparent;
+    margin: 55px auto;
+    border: 0;
+    background: #112;
+    background-position: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.galery-main-content{
+    margin: 3px auto 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 80vw;
+    border: .5px solid snow;
+    border-radius: 12px;
+}
+.galery-main-content > img{
+    object-fit: cover;
+}
+.galery-main{
+    height: 60vh;
+    width: 80vw;
+    border-radius: 12px;
+    animation: slide 10s infinite alternate-reverse;
+    animation-play-state: running;
+}
+.galery-card{
+    height: 150px;
+    width: 16%;
+    margin: 2px 1.5% 2px 0;
+    border-radius: 2em;
+    margin: 0 auto;
+}
+.galery div + div{
+    overflow: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    height: 176px;
+    width: 99%;
+    margin: 0 auto;
+    padding: 8px 0 0 8px;
+    border: 2px solid #112;
+    border-radius: 3px;
+}
+.galery div + div a > img{
+    transition: all .6s linear;
+    object-fit: cover;
+}
+.galery div + div a > img:hover{
+    opacity: .6;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    22%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-80.6vw);
+    }
+    47%{
+        transform: translateX(-80.6vw);
+    }
+    50%{
+        transform: translateX(-160.6vw);
+    }
+    72%{
+        transform: translateX(-160.6vw);
+    }
+    75%{
+        transform: translateX(-240.9vw);
+    }
+    97%{
+        transform: translateX(-240.9vw);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.galery div+div::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+.galery div+div::-webkit-scrollbar-track {
+    background: rgb(14, 20, 39);        /* color of the tracking area */
+}
+
+.galery div+div::-webkit-scrollbar-thumb {
+    background-color: rgb(122, 122, 122);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(49, 52, 73);  /* creates padding around scroll thumb */
+}

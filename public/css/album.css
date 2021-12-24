@@ -1,0 +1,22 @@
+.main-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: .5px red;
+    margin-bottom: 40px;
+}
+.content > img{
+    height: 400px;
+    margin: 10px 1%;
+}
+input{
+    width: 150px;
+    height: 40px;
+    margin: 5px auto 20px;
+}

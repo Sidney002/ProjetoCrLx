@@ -1,0 +1,113 @@
+@charset "UTF-8";
+body{
+    -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    /* cursor: default; */
+}
+html{
+    font-family: sans-serif;
+    color: aquamarine;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Oxygen";
+    color: #112;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin: 0;
+}
+.links{
+    margin: 0;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #112;
+}
+.header-link{
+    text-decoration: none;
+    color: beige;
+}
+footer{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #112;
+}
+main{
+    width: 100%;
+    margin: 0 auto;
+    color: wheat;
+    background: url("/img/qw.jpg") fixed;
+    background-position: center;
+    background-size: cover;
+}
+.main-title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.about{
+    background: #112;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+.about > img{
+    height: 280px;
+    width: 240px;
+}
+.about > p{
+    width: 70%;
+    height: 30%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+@media screen and (min-width: 48.75em){
+    
+    body{
+        color: red;
+    }
+    
+}
+
+@media screen and (min-width: 62.5em){ /* 1000 / 16 */
+    
+    body{
+        color: aliceblue;
+    }
+    
+}
+    
+    
+    
+    
+    
+    
+    
