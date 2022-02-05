@@ -1,55 +1,60 @@
-.galery{
+.galeria{
+    height: 90%;
     width: 100%;
-    background: transparent;
-    margin: 55px auto;
-    border: 0;
-    background: #112;
-    background-position: center;
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.recentes{
+    height: 65%;
+    width: 80%;
     box-sizing: border-box;
-}
-.galery-main-content{
-    margin: 3px auto 3px;
-    overflow: hidden;
     white-space: nowrap;
-    width: 80vw;
-    border: .5px solid snow;
-    border-radius: 12px;
+    overflow-x: scroll;
 }
-.galery-main-content > img{
-    object-fit: cover;
-}
-.galery-main{
-    height: 60vh;
-    width: 80vw;
-    border-radius: 12px;
+.recentes > img{
+    height: 100%;
+    width: 100%;
     animation: slide 10s infinite alternate-reverse;
     animation-play-state: running;
+    
 }
-.galery-card{
-    height: 150px;
-    width: 16%;
-    margin: 2px 1.5% 2px 0;
-    border-radius: 2em;
-    margin: 0 auto;
-}
-.galery div + div{
-    overflow: scroll;
-    overflow-y: hidden;
+.outros{
+    height: 30%;
+    width: 80%;
+    border-radius: 8px;
     white-space: nowrap;
-    height: 176px;
-    width: 99%;
-    margin: 0 auto;
-    padding: 8px 0 0 8px;
-    border: 2px solid #112;
-    border-radius: 3px;
+    overflow-y: hidden;
+    overflow-x: scroll;
 }
-.galery div + div a > img{
-    transition: all .6s linear;
-    object-fit: cover;
+.outros > .img{
+    display: inline-block;
+    height: 90%;
+    width: 20%;
+    background: gray;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 2em;
+    margin-left: 4%;
 }
-.galery div + div a > img:hover{
-    opacity: .6;
+.outros::-webkit-scrollbar {
+    height: .5em;
+    width: 15px;
+  }
+.outros::-webkit-scrollbar-thumb {
+    background: #31CB00;
+    border-radius: 8px;
+}
+.outros > .img:hover{
+    opacity: .7;
+}
+.recentes::-webkit-scrollbar {
+    display: none;
+  }
+.outros > .img:hover{
+    opacity: .7;
 }
 @keyframes slide {
     0% {
@@ -79,17 +84,4 @@
     100%{
         transform: translateX(0);
     }
-}
-.galery div+div::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-  }
-  
-.galery div+div::-webkit-scrollbar-track {
-    background: rgb(14, 20, 39);        /* color of the tracking area */
-}
-
-.galery div+div::-webkit-scrollbar-thumb {
-    background-color: rgb(122, 122, 122);    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid rgb(49, 52, 73);  /* creates padding around scroll thumb */
 }
