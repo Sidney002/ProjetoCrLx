@@ -16,18 +16,18 @@ body{
     box-sizing: border-box;
 }
 header{
-    height: 40vh;
+    height: 55vh;
     flex-direction: column;
     width: 100%;
 }
 header .logo{
-    height: 80%;
+    height: 90%;
     display: flex;
     align-self: center;
     justify-content: center;
 }
 header .links{
-    height: 20%;
+    height: 10%;
     width: 100%;
     background: #0E1C29;
     display: flex;
@@ -139,6 +139,7 @@ main .main-section .main-title{
 }
 .albuns .capa:hover{
     opacity: .8;
+    cursor: pointer;
 }
 .albuns .capa img{
     height: 100%;
@@ -161,7 +162,8 @@ footer{
 }
 footer .links{
     height: 40%;
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -177,4 +179,13 @@ footer .links .contato{
     color: #0E1C29;
     text-decoration: none;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 9%;
+    height: 50px;
+}
+.surgir{
+    transition: all 0.3s linear;
 }

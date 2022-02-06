@@ -18,6 +18,9 @@ app.get('/',(req,res)=>{
 app.get('/album',(req,res)=>{
     res.render('album.html')
 })
+app.get('/pacotes',(req,res)=>{
+    res.render('pacotes.html')
+})
 
 
 

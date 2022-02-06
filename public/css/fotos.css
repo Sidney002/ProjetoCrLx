@@ -1,0 +1,8 @@
+body .fotos{
+    position: absolute;
+    z-index: 10000;
+    background: #00070eaf;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
