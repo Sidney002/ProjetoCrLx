@@ -12,6 +12,7 @@
     box-sizing: border-box;
     white-space: nowrap;
     overflow-x: scroll;
+    border: 1px dotted silver;
 }
 .recentes > img{
     height: 100%;
@@ -37,7 +38,7 @@
     text-align: center;
     cursor: pointer;
     line-height: 2em;
-    margin-left: 4%;
+    margin: 1% 2%;
 }
 .outros::-webkit-scrollbar {
     height: .5em;

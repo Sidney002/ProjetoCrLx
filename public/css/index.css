@@ -11,13 +11,12 @@ html{
 body{
     margin: 0;
     padding: 0;
-    background: #0f1318;
+    background: #ffffff;
     height: 100vh;
     box-sizing: border-box;
 }
 header{
     height: 40vh;
-    background: #0f1318;
     flex-direction: column;
     width: 100%;
 }
@@ -34,12 +33,25 @@ header .links{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid #31CB00;
 }
 header .links .link{
     font-family: Roboto, Oxygen, Ubuntu,'Helvetica Neue';
     color: #31CB00;
+    font-size: .9em;
     text-decoration: none;
     font-weight: bold;
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s linear;
+}
+.links .link:hover{
+    background: #31CB00;
+    color: #0E1C29;
 }
 main{
     width: 100%;
@@ -49,14 +61,14 @@ main{
     box-sizing: border-box;
 }
 main .main-section{
-    height: 90vh;
+    height: 80vh;
     width: 100%;
     margin-top: 1%;
     margin-bottom: 1%;
 }
 main .main-section .main-title{
-    color: #31CB00;
-    /*color: #0E1C29;*/
+    /*color: #31CB00;*/
+    color: #0E1C29;
     text-align: center;
     font-family: Roboto, Oxygen, Ubuntu,'Helvetica Neue';
     font-weight: bold;
@@ -84,7 +96,7 @@ main .main-section .main-title{
 .about-me{
     display: flex;
     justify-content: space-between;
-    height: 90%;
+    height: 80%;
     width: 100%;
     background: #0E1C29;
 }
@@ -103,22 +115,59 @@ main .main-section .main-title{
     font-family: Roboto, Oxygen, Ubuntu,'Helvetica Neue';
     font-weight: bold;
 }
+.albuns{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 80%;
+    width: 80%;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 2% auto;
+}
+.albuns .capa{
+    width: 150px;
+    margin: .5% auto;
+    height: 180px;
+    overflow: hidden;
+    transition: all .6s linear;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+.albuns .capa:hover{
+    opacity: .8;
+}
+.albuns .capa img{
+    height: 100%;
+    width: 100%;
+}
+.albuns::-webkit-scrollbar {
+    height: .5em;
+    width: 5px;
+  }
+.albuns::-webkit-scrollbar-thumb {
+    background: #31CB00;
+    border-radius: 8px;
+}
 footer{
+    margin-top: 2%;
     height: 60vh;
     background: #31CB00;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 footer .links{
-    height: 30%;
+    height: 40%;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 footer .logo{
-    height: 70%;
+    height: 60%;
     display: flex;
     align-self: center;
     justify-content: center;
