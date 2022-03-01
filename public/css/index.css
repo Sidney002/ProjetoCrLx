@@ -27,19 +27,18 @@ header .logo{
     justify-content: center;
 }
 header .links{
-    height: 10%;
+    height: 15%;
     width: 100%;
     background: #0E1C29;
     display: flex;
     justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
-    border-bottom: 2px solid #31CB00;
 }
 header .links .link{
-    font-family: Roboto, Oxygen, Ubuntu,'Helvetica Neue';
+    font-family: Arial, Helvetica, sans-serif;
     color: #31CB00;
-    font-size: .9em;
+    font-size: 1.1em;
     text-decoration: none;
     font-weight: bold;
     height: 100%;
@@ -47,17 +46,30 @@ header .links .link{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .3s linear;
+    flex-wrap: wrap;
+    transition: all 0.3s linear;
 }
+
+.links .link svg {
+    margin-right: 5px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
 .links .link:hover{
     background: #31CB00;
     color: #0E1C29;
 }
+
+
+.links .link:hover svg {
+    color: #0E1C29;
+}
+
 main{
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 2% auto;
     box-sizing: border-box;
 }
 main .main-section{
@@ -70,7 +82,8 @@ main .main-section .main-title{
     /*color: #31CB00;*/
     color: #0E1C29;
     text-align: center;
-    font-family: Roboto, Oxygen, Ubuntu,'Helvetica Neue';
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 .categorias{
@@ -154,14 +167,13 @@ main .main-section .main-title{
     border-radius: 8px;
 }
 footer{
-    margin-top: 2%;
     height: 60vh;
     background: #31CB00;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 footer .links{
-    height: 40%;
     margin: 0 auto;
     width: 90%;
     display: flex;
@@ -175,17 +187,33 @@ footer .logo{
     justify-content: center;
 }
 footer .links .contato{
-    font-family: Roboto, Oxygen, Ubuntu,'Helvetica Neue';
+    font-family: Arial, Helvetica, sans-serif;
     color: #0E1C29;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1em;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    width: 9%;
+    justify-content: center;
     height: 50px;
+    padding: 5px;
 }
+
+footer .links .contato > svg {
+    margin-right: 5px;
+
+}
+
+footer .links .contato:hover {
+    background-color: #0E1C29;
+    color: #31CB00
+}
+
+footer .links .contato:hover svg {
+    color: white;
+}
+
 .surgir{
     transition: all 0.3s linear;
 }
